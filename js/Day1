@@ -1,0 +1,153 @@
+Java script:
+client               server
+
+2000   laptop-256mb 512  1gb
+
+
+List of Tech
+button
+sort by name
+
+C
+C++
+Java
+Dot net
+hibernate
+spring
+spring boot
+
+
+Javascript
+
+what we can do?
+1. front end
+2. back end
+3. mobile
+4. desktop
+5. ..
+
+
+Front End:
+1. React
+2. Angular
+3. Vue
+4. svelte
+
+Jquery: library.
+simplies html manupulation, event handling, network request
+
+Vanila Js: js without any library
+
+Backend
+
+
+JS feature:
+ 
+ 
+
+
+1. js is interpreted language
+2. js is dynamically and weakly type
+	int a = 10;
+	int a = '10';
+	int a = "10";
+
+	let a = 10;
+	a = "10"
+
+3.js support oops
+4. js is single threaded
+
+
+
+
+cons
+browser support
+security
+
+
+JS version
+
+ES6
+Es2015
+ES2016
+
+
+ES 2023
+
+ES Next
+
+BABEL ES6+  -> browser support Js
+
+
+let a =10;
+
+TS -> JS
+let a = 10;
+
+___________________________________________________________________________________________
+Example 1:
+console.log('Good morning');
+
+//declare the variable
+let a  = 10;
+var b = 20;
+
+console.log('a=',a," b=",b);
+
+
+
+function test1(){
+  console.log("function test1 called...");
+  var x = "function scoped";
+  let y ="blocked scope";
+
+  console.log('x=',x);
+  console.log('y=',y);
+}
+
+test1();
+
+function test12(){
+  global = 200;
+  const pi = 3.14;
+  console.log("function test1 called...");
+  if(true){
+     var x = "function scoped";
+     let y = "blocked scope";
+  }
+  console.log('x=',x);
+  //console.log('y=',y);
+}
+
+test12();
+
+console.log('global=',global);
+
+_____________________________________________________________________________________________________
+Example 2:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
