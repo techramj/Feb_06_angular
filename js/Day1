@@ -87,6 +87,7 @@ let a = 10;
 
 ___________________________________________________________________________________________
 Example 1:
+----------------------------------------------
 console.log('Good morning');
 
 //declare the variable
@@ -125,9 +126,43 @@ test12();
 console.log('global=',global);
 
 _____________________________________________________________________________________________________
-Example 2:
+Datatype is JS
+1. Number
+2. string
+3. boolean
+4. object
+5. function
+6. undefined
+7. bigint
+8. symbol
 
+____________________________________________________________________________________________________
+example 2(Number)
+---------------------------------------------
+--Number
+let natural = 10;
+let decimal = 1.112;
+let hex  = 0xA;
+let binary = 0b111;
+let octal = 0o77;
+let fivelakh = 5e6;
 
+console.log('natural='+natural);
+console.log('decimal='+decimal);
+console.log('hex='+hex);
+console.log('binary='+binary, 'Type of binary=',typeof binary);
+console.log('octal='+octal);
+console.log('fivelakh='+fivelakh);
+
+console.log('Two special number is NaN and Infinity');
+
+let a  = 10 * 'x';
+console.log('typeof a=',typeof a);
+console.log('a='+a);
+
+let b = 10/0;
+console.log('typeof b=',typeof b);
+console.log('b='+b);
 
 
 
