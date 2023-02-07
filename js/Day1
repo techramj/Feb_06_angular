@@ -176,24 +176,40 @@ console.log('typeof b=',typeof b);
 console.log('b='+b);
 
 
+---------------------------------
 
+let a = 10;
+let b = '10';
+console.log(a==b);
+console.log(a===b);
 
+let x = 'apple';
+let y = "apple";
+console.log(x==y);
+console.log(x===y);
 
+let p = {name:"Jack"};
+let q = {name:"Jack"};
+console.log(p==q);
+console.log(p===q);
 
+//symbol
+let s1 = Symbol(10);
+let s2 = Symbol(10);
+console.log(s1==s2)
 
+let arr =[1];
+let barr = [1];
+//todo
+to the tryout for ==, ===
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
++
+-
+>
+>
+>=
+<=
+!=
+++
+--
+%
