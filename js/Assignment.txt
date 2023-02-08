@@ -7,6 +7,24 @@
       //return true/false;
     }
 
+let emp1 = { id: NaN, name: 'Jack', salary: '1000' };
+let emp2 = { id: 2, name: 'Sam', salary: 2000 };
+let emp3 = { id: NaN, name: 'Jack', salary: '1000' };
+
+function compareobj(emp1, emp2) {
+  if( (emp1.id===emp2.id || (isNaN(emp1.id) == isNaN(emp2.id))) 
+     && emp1.name==emp2.name  
+     && emp1.salary === emp2.salary
+    ){
+      return true;
+    }
+  return false;
+}
+
+console.log(compareobj(emp1, emp2));
+console.log(compareobj(emp1, emp3));
+
+;
 
 3. create the object with key as operator
   
