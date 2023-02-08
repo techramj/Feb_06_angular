@@ -1,0 +1,16 @@
+
+1. function to print the variable value and its type
+2. create the object emp1 and emp2 . (id,name,salary)
+    function to compare emp object 
+
+    function compare(emp1, emp2){
+      //return true/false;
+    }
+
+
+3. create the object with key as operator
+  
+  //console.log('id= ',emp.id); similiar way, print the key value pair explicity
+
+
+  

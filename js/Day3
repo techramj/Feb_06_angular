@@ -1,0 +1,48 @@
+console.log('Good morning!');
+
+function greet(){
+  console.log('Good morning.....');
+}
+greet();
+
+function testScope(){
+
+  if(true){
+    let num1 = 10;  //block scope
+    var num2 = 20;  //function scope
+    const num3 = 30; //constant block scope
+    num4 = 40; //global scope
+    //try to avoid using global value
+    
+  }
+
+  //console.log('num1 ='+num1);  //block scope
+  console.log('num2 ='+num2); 
+ // console.log('num3 ='+num3);  //block scope
+   console.log('num4 ='+num4);
+}
+
+testScope();
+//console.log('num2 ='+num2);
+console.log('num4 ='+num4);
+
+
+//datatype NUMBER
+let natural = 10;
+let decimal = 1.112;
+let hex  = 0xA;
+let binary = 0b111;
+let octal = 0o77;
+let fivelakh = 5e6;
+//0 1 2 3 ... 9 //decimal
+//0 1 2 3 .... 9 A B C D E F  hexadecimal
+//0 1 binary
+//0 1 2 3 4 5 6 7 octal
+
+console.log('Binary='+binary,"type="+typeof binary);
+
+let x = natural - 'a';
+console.log(x, typeof x);
+let y = Number('10x'); //convert string to number
+console.log(y, typeof y);
+console.log(isNaN(y));
