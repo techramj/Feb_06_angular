@@ -31,4 +31,27 @@ console.log(compareobj(emp1, emp3));
   //console.log('id= ',emp.id); similiar way, print the key value pair explicity
 
 
-  
+4. function to reverse the number
+10234  => 43201
+
+5. function to check year is leap year or not
+function isLeapYear1(year){
+  if(year%400==0){
+    return true;
+  }else if(year%100 == 0){
+    return false;
+  }else if(year%4==0){
+    return true;
+  }
+  return false;
+}
+
+function isLeapYear(year){
+  return year%400==0 ||(year%100!=0 && year%4==0);
+}
+
+console.log('1900', isLeapYear(1900));
+console.log('2000', isLeapYear(2000));
+console.log('1995', isLeapYear(1995));
+console.log('1992', isLeapYear(1992));
+
