@@ -1,0 +1,370 @@
+Loop:
+
+let arr =[1,2,3,4,5,6];
+
+function displayArray(arr){
+  //console.log(arr);
+  for(let i=0; i<arr.length;i++){
+    console.log(arr[i]);
+   // arr[i] = i*10;
+  }
+  //console.log(arr);
+  console.log('');
+}
+
+//read only
+function displayArray1(arr){
+  //console.log(arr);
+  for(let item of arr){
+    console.log(item);
+   // item = item *10;
+  }
+  //console.log(arr);
+  console.log('');
+}
+
+function displayArray2(arr){
+  arr.forEach(function(x){
+    console.log(x);
+  });
+  console.log('');
+}
+
+
+displayArray(arr);
+displayArray1(arr);
+displayArray2(arr);
+
+/*For loop to iterate object*/
+let emp = {salary:2000, jobTitle: 'Lead'};
+
+for(let key in emp){
+  console.log(key+" = "+emp[key]);
+}
+
+//-------------------------------
+while(condtion){
+
+}
+
+do{
+
+}while(condtion);
+
+//------------------switch-case--------------
+switch(ans){
+    case a: //code
+      break;
+    case b:  //code
+      break;
+    default:
+        //code
+}
+
+let a = 10;
+const b = 10;
+
+switch(a){
+  case b: console.log('ten'); break;
+  case 1: console.log('one'); break;
+  case 2: console.log('two'); break;
+  default: console.log('default'); break;
+
+}
+
+
+//--------------------------Ternary
+//let x= condtion ? exp1 :exp2
+let a =10;
+
+let x = a%2==0? 1  : 0 ;
+
+console.log(x);
+
+
+//-----------------------OOP----------
+/*Example 1 */
+class Person{
+    constructor(name,age){
+      this.name = name;
+      this.age = age;
+    }
+  }
+  
+  let person1 = new Person("Jack",20);
+  let person2 = new Person("John",30);
+  console.log(person1);
+  console.log(person2);
+  
+/*Example 2 */
+
+
+class Person{
+    constructor(name,age){
+      this.name = name;
+      this.age = age;
+    }
+  
+    display(){
+      console.log("Name: "+ this.name);
+      console.log("Age: "+ this.age);
+      console.log("");
+    }
+  
+    static compare(p1, p2){
+      if(p1.name == p2.name && p1.age == p2.age){
+         console.log("both objects are equals");
+      }else{
+        console.log("Objects are not equal");
+      }
+    }
+  }
+
+  let person1 = new Person("Jack",20);
+  let person2 = new Person("John",30);
+  let person3 = new Person("Jack",'20');
+  console.log(person1);
+  console.log(person2);
+  person1.display();
+  person2.display();
+  
+  Person.compare(person1, person2);
+  Person.compare(person1, person3);
+
+
+  /*Class and its subtype example */
+  class Person{
+    constructor(name,age){
+      this.name = name;
+      this.age = age;
+    }
+  
+    display(){
+      console.log("Name: "+ this.name);
+      console.log("Age: "+ this.age);
+      //console.log("");
+    }
+  
+    static compare(p1, p2){
+      if(p1.name == p2.name && p1.age == p2.age){
+         console.log("both objects are equals");
+      }else{
+        console.log("Objects are not equal");
+      }
+    }
+  }
+  
+  let person1 = new Person("Jack",20);
+  let person2 = new Person("John",30);
+  let person3 = new Person("Jack",'20');
+  
+  
+  class Employee extends Person{
+    constructor(name,age,salary,jobTitle){
+      super(name,age);
+      this.salary = salary;
+      this.jobTitle = jobTitle;
+    }
+  
+    display(){
+      super.display();
+      console.log('Salary: '+this.salary);
+      console.log('Job Title: '+this.jobTitle);
+    }
+  }
+  
+  let emp1 = new Employee('Sam',28,4000,'S/W Engg');
+  console.log(emp1);
+  emp1.display();
+  
+
+  //------------------Protype based object----------------------------
+  let person1 ={name:'Jack', 
+              age:29,
+
+              display : function(){
+                console.log("Name: "+ this.name);
+                console.log("Age: "+ this.age);
+                console.log('');
+              }
+             
+             }
+
+console.log(person1);
+person1.display();
+
+let person2 ={name:'Sam', 
+              age:30,
+
+              display : function(){
+                console.log("Name: "+ this.name);
+                console.log("Age: "+ this.age);
+                console.log('');
+              }
+             
+             }
+person2.display();
+
+let anotherPerson = Object.create(person1);
+console.log(anotherPerson);
+anotherPerson.display();
+console.log(anotherPerson.name);
+console.log(Object.getPrototypeOf(anotherPerson));
+console.log(Object.getPrototypeOf(person1));
+
+console.log('___________________________');
+person1.name ='Sameer';
+console.log(anotherPerson.name);
+anotherPerson.name = 'Sanjay';
+console.log(anotherPerson);
+console.log(person1.name);
+
+
+
+//-----------------Object.assign()----------------
+let person = {name:'Jack', age:23};
+let emp = {salary:2000, jobTitle: 'Lead'};
+//assign
+/*for(let key in emp){
+  //console.log(key+" = "+emp[key]);
+  person[key] = emp[key];
+}
+console.log(person);
+*/
+
+Object.assign(person, emp);
+console.log(person);
+
+emp.salary = 5000;
+console.log(person);
+
+//-------------------
+
+let person1 ={name:'Jack', 
+              age:29,
+
+              display : function(){
+                console.log("Name: "+ this.name);
+                console.log("Age: "+ this.age);
+                console.log('');
+              }
+             
+             }
+
+let person2 =Object.assign({}, person1);
+
+console.log(person1);
+console.log(person2);
+person1.age= 44;
+console.log(person1);
+console.log(person2);
+  
+
+_________________________________________________________________
+  
+
+let person1 ={name:'Jack', 
+              age:29, }
+
+
+let keys = Object.keys(person1);
+console.log(keys);
+
+let values  = Object.values(person1);
+console.log(values);
+
+let entries = Object.entries(person1);
+console.log(entries);
+
+__________________________________________________________________
+
+//built in function in array
+/*
+array.splice(startingIndex, 
+             howMayElementWantToRemove, 
+             ...elementWanToAdd);
+*/
+
+let arr = [10,20,4,6,78];
+
+//insert 1,2,3 after 20
+arr.splice(2,0,1,2,3);
+console.log(arr);
+
+//delete 10,20
+arr.splice(0,2);
+console.log(arr);
+
+//replace 3rd element with 100 using splice
+//arr[2] = 100;
+arr.splice(2,1,100);
+console.log(arr);  //[ 1, 2, 100, 4, 6, 78 ]
+
+//replace 100,4,6 with 200
+arr.splice(2,3,200);
+console.log(arr);
+
+let barr = [1,2,3,4,5,6,7,8,9];
+
+let even = barr.find(function(x){
+  if(x%2==0){
+    return x;
+  }
+});
+console.log(even);
+
+let evens = barr.filter(function(x){
+  return x%2 == 0
+});
+console.log(evens);
+
+
+_________________________________________________________________
+        
+//ES6 feature: Arrow function
+//arrow function
+greet1();
+//greet3();
+
+function greet1(){
+  console.log('Good morning');
+}
+
+let greet2 = function(){
+  console.log('Good morning');
+}
+
+let greet3 = () => {
+  console.log('Good morning');
+}
+
+
+//greet2();
+greet3();
+
+____________________________________________________________________________
+
+let square = (arg) => {
+    return arg*arg;
+  }
+  
+  console.log(square(10));
+  
+  
+  //function with one arguements, parenthesis is optional
+  let square1 = arg =>{
+    return arg*arg;
+  }
+  console.log(square1(101));
+  
+  let square2 =  arg => arg*arg;
+  console.log(square2(1001));
+  
+  let funtionReturn100 = () => 100;
+  console.log(funtionReturn100());
+  
+  //if the function return object then use parenthesis
+  let functionReturnPeson = () => ({name:'Jack', age:23});
+  console.log(functionReturnPeson());
+  
+  

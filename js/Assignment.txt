@@ -55,3 +55,5 @@ console.log('2000', isLeapYear(2000));
 console.log('1995', isLeapYear(1995));
 console.log('1992', isLeapYear(1992));
 
+
+
