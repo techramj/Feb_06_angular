@@ -80,6 +80,32 @@ Assignment 3:
 
   output [2,3,5,7]
 
-6. find the any number in an divisible by 2,3,6
+6. find the any number in an divisible by 2,3,6.
   
 
+7. write a class Employee 
+Employee
+  id
+  name
+  basicSalary
+  hra = 40% of basicSalary
+  da  = 20% of basicSalary
+
+  display()
+  computeSalary()  => basicSalary + hra + da
+
+Manager extends Employee
+ noOfSubordinate
+ override the function computeSalary()  basicSalary + hra + da + (noOfSubordinate * 1000) ;
+
+
+create 2 object of employee and manager each.
+
+8. Try to create the above class using prototype. (use Object.create and Object.assign)
+
+
+9. write function to delete all the prime number from array
+ eg: arr = [1,2,3,4,5,6,7];
+     after function call arr => [1,4,6]
+
+10. print 1 to 10 without using traditional loop
