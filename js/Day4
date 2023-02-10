@@ -34,7 +34,7 @@ function displayArray2(arr){
 displayArray(arr);
 displayArray1(arr);
 displayArray2(arr);
-
+____________________________________________________________________________
 /*For loop to iterate object*/
 let emp = {salary:2000, jobTitle: 'Lead'};
 
@@ -50,7 +50,7 @@ while(condtion){
 do{
 
 }while(condtion);
-
+____________________________________________________________________________
 //------------------switch-case--------------
 switch(ans){
     case a: //code
@@ -95,7 +95,7 @@ class Person{
   let person2 = new Person("John",30);
   console.log(person1);
   console.log(person2);
-  
+  ____________________________________________________________________________ 
 /*Example 2 */
 
 
@@ -130,7 +130,7 @@ class Person{
   
   Person.compare(person1, person2);
   Person.compare(person1, person3);
-
+  ____________________________________________________________________________
 
   /*Class and its subtype example */
   class Person{
@@ -177,7 +177,7 @@ class Person{
   console.log(emp1);
   emp1.display();
   
-
+  ____________________________________________________________________________
   //------------------Protype based object----------------------------
   let person1 ={name:'Jack', 
               age:29,
@@ -220,7 +220,7 @@ console.log(anotherPerson);
 console.log(person1.name);
 
 
-
+____________________________________________________________________________
 //-----------------Object.assign()----------------
 let person = {name:'Jack', age:23};
 let emp = {salary:2000, jobTitle: 'Lead'};
@@ -238,7 +238,7 @@ console.log(person);
 emp.salary = 5000;
 console.log(person);
 
-//-------------------
+____________________________________________________________________________
 
 let person1 ={name:'Jack', 
               age:29,

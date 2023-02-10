@@ -55,5 +55,31 @@ console.log('2000', isLeapYear(2000));
 console.log('1995', isLeapYear(1995));
 console.log('1992', isLeapYear(1992));
 
+____________________________________________________________________________
 
+Assignment 3:
+1. write a function which check number is prime or not   => isPrime(num)  return boolean
+2. write a function to print 100 prime number   printFirstNPrime(numberOfTerm)
+3. write a function to print nearest primeNumber for a  given number.
+  function nearestPrime(num){
+    //write the code
+  }
+
+  nearestPrime(13)  =>  11      
+  nearestPrime(17)  =>  19
+
+4. write a function to print  fibonacci series
+   0  1   1   2   3   5   8   13   21   34 ....
+
+   fibb(num){
+
+   }
+
+5. declare the array  with some value and filter the prime number
+  let arr = [1,2,3,4,5,6,7,8,9];
+
+  output [2,3,5,7]
+
+6. find the any number in an divisible by 2,3,6
+  
 
