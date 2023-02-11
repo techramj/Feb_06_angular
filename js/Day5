@@ -1,0 +1,35 @@
+Download Node js
+
+URL: https://nodejs.org/en/download/
+
+After installing node js the below command:
+node -v
+npm -v
+
+Download Angular:
+
+url: https://angular.io/cli
+
+execute the below command to install angular
+npm install -g @angular/cli
+
+
+Install Babel:
+npm install @babel/core @babel/preset-env @babel/node
+
+create the file .babelrc
+
+
+Angualar:
+If you get any security issue error
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+
+--create new project
+ng new project-one
+
+cd project-one
+
+--start the project
+ng serve
+
