@@ -40,3 +40,17 @@ it is an instruction in the DOM.
         <app-person name="person.name"  ></app-person>
     </div>
 </div>
+
+--step to use bootstrap
+step 1: install bootstrap
+npm install --save bootstrap@3
+
+add the path in angualr.json styles property
+"node_modules/bootstrap/dist/css/bootstrap.min.css",
+
+            "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css"
+            ],
+
+
