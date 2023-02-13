@@ -1,0 +1,29 @@
+//Angular 
+
+a.html
+b.html
+c.html
+
+
+Angular is a type script based open-source web application framework .
+SPA => single page application.
+
+
+create new project
+ng new project-name
+
+check all commands 
+ng help
+
+start the project:
+ng serve
+
+create componenet
+ng generate componenet component-name
+ng g c componenet-name
+
+if you don't want to create spec file
+ng g c componenet-anme --skip-tests 
+
+
+@Input() 
