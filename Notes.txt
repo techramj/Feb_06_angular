@@ -27,3 +27,16 @@ ng g c componenet-anme --skip-tests
 
 
 @Input() 
+
+
+Directive:
+it is an instruction in the DOM.
+*ngIf
+*ngFor
+
+
+<div *ngIf="showPeople">
+    <div *ngFor="let person of people">
+        <app-person name="person.name"  ></app-person>
+    </div>
+</div>

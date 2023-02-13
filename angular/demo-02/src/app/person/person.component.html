@@ -1,6 +1,18 @@
 <div>
-    <h3>Welcome {{name}}</h3>
-    <p>Age: {{age}}</p>
-    <p>Nationality: {{nationality}}</p>
+    <h3 *ngIf="name else nameBlock">Welcome {{name}}!</h3>
+    <ng-template #nameBlock>
+        <h3>Welcome!</h3>
+    </ng-template>
+    <p *ngIf="age">Age: {{age}}</p>
+    <p *ngIf="nationality">Nationality: {{nationality}}</p>
 </div>
 
+
+
+<!-- 
+<div>
+    <h3 *ngIf="name">Welcome {{name}}!</h3>
+    <h3 *ngIf="!name">Welcome!</h3>
+    <p *ngIf="age">Age: {{age}}</p>
+    <p *ngIf="nationality">Nationality: {{nationality}}</p>
+</div> -->
