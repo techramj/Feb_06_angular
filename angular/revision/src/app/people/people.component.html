@@ -1,0 +1,14 @@
+<div *ngFor="let person of people">
+    <h3>Welcome {{person.name}}</h3>
+    <p>Age: {{person.age}}</p>
+    <p>Nationality: {{person.nationality}}</p>
+</div>
+
+<hr>
+<div *ngFor="let person of people">
+    <app-person name={{person.name}} 
+    age={{person.age}} 
+    origin={{person.nationality}}></app-person>
+</div>
+
+<hr>
