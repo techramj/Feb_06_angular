@@ -30,6 +30,28 @@ ng g c componenet-anme --skip-tests
 
 
 Directive:
+install node js
+https://nodejs.org/en/download/
+
+node -version
+npm -version
+
+install Angular
+
+npm install -g @angular/cli
+ng version
+
+create a angular project
+ng new project-name
+
+
+start the project
+ng serve
+
+
+
+Directive:
+----------
 it is an instruction in the DOM.
 *ngIf
 *ngFor
@@ -54,3 +76,69 @@ add the path in angualr.json styles property
             ],
 
 
+
+
+
+
+Selector:
+1. Element selector
+Component:
+@Component({
+  selector: 'app-selector-a',
+  templateUrl: './selector-a.component.html',
+  styleUrls: ['./selector-a.component.css']
+})
+
+
+html(element selector)
+<app-selector-a></app-selector-a>
+
+
+2. Attribute selector
+@Component({
+  selector: '[app-selector-a]',
+  templateUrl: './selector-a.component.html',
+  styleUrls: ['./selector-a.component.css']
+})
+
+<div app-selector-a></div>
+
+
+3. class selector
+@Component({
+  selector: '.app-selector-a',
+  templateUrl: './selector-a.component.html',
+  styleUrls: ['./selector-a.component.css']
+})
+<div class='app-selector-a'></div>
+
+
+
+
+what is binding?
+binding means communicatation.
+
+Typescript                                                      Template(HTML)
+
+           ---------------------------------------------->
+                        output  data
+
+            a. string Interpolation   => {{data}}
+            b. property binding => [property] ='data'
+            don't combine string Interpolation with property binding
+            [disable] ='{{!allowAddServer}}' => error
+          
+
+            <-----------------------------------------------
+             react to (users) Event
+             Event Binding (event) ='expression'
+
+
+             <-------------------------------------------->
+             two way binding => combinantion of above two
+             [(ngModel)] = 'data'
+
+      Note: for ngModel, import FormsModule in components as well as app.module.ts
+
+server
+servers
