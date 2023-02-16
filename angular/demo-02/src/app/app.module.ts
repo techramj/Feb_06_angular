@@ -12,6 +12,8 @@ import { SelectorBComponent } from './selector-b/selector-b.component';
 import { SelectorCComponent } from './selector-c/selector-c.component';
 import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
+import { ButtonCounterComponent } from './button-counter/button-counter.component';
+import { CongratLabelComponent } from './congrat-label/congrat-label.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { ServersComponent } from './servers/servers.component';
     SelectorBComponent,
     SelectorCComponent,
     ServerComponent,
-    ServersComponent
+    ServersComponent,
+    ButtonCounterComponent,
+    CongratLabelComponent
   ],
   imports: [
     BrowserModule,

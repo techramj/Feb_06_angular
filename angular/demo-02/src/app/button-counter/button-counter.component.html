@@ -1,0 +1,8 @@
+<!-- <label *ngIf="count==5">Congratualtion you clicked 5 times. You will soon get the Silver button tag.</label>
+<label *ngIf="count==10">Congratualtion you clicked 10 times. You will soon get the Golden button tag.</label>
+<label *ngIf="count==20">Congratualtion you clicked 20 times. You will soon get the Platinum button tag.</label>
+<br> -->
+
+<app-congrat-label [contrgratCount]="count" ></app-congrat-label>
+<button class="btn btn-primary" (click)="updateButtonCount()">Click</button>
+<p>The button clicked <b>{{count}}</b> times</p>
