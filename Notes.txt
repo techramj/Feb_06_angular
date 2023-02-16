@@ -114,7 +114,6 @@ html(element selector)
 
 
 
-
 what is binding?
 binding means communicatation.
 
@@ -126,7 +125,7 @@ Typescript                                                      Template(HTML)
             a. string Interpolation   => {{data}}
             b. property binding => [property] ='data'
             don't combine string Interpolation with property binding
-            [disable] ='{{!allowAddServer}}' => error
+            [disabled] ='{{!allowAddServer}}' => error
           
 
             <-----------------------------------------------
@@ -142,3 +141,24 @@ Typescript                                                      Template(HTML)
 
 server
 servers
+
+
+
+Assignment 1
+1. add a input field which will update the username in two way binding
+output the username property via spring Interpolation
+
+Add the button which may clicked if the username is not empty
+once you click the button, the name should be reset to empty string.
+
+
+Assignment 2:
+Congratualtion you clicked 10 times. You will soon get the Silver button tag.
+Congratualtion you clicked 50 times. You will soon get the Golden button tag.
+Congratualtion you clicked 100 times. You will soon get the Platinum button tag.
+<button>click</button>
+no of times button clicked: 10
+
+
+modify the last Assignment
+<person name='jack' [age]='20' >
