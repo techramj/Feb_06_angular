@@ -16,6 +16,7 @@ export class ButtonBannerComponent implements OnInit {
 
   updateValue(){
     this.count++;
+    console.log(this.count);
     if(this.count == 5){
       this.batch = 'Silver';
     }else if(this.count == 10){
