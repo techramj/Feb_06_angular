@@ -14,6 +14,8 @@ import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
 import { ButtonCounterComponent } from './button-counter/button-counter.component';
 import { CongratLabelComponent } from './congrat-label/congrat-label.component';
+import { ButtonMessageComponent } from './button-message/button-message.component';
+import { OutputComponent } from './output/output.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { CongratLabelComponent } from './congrat-label/congrat-label.component';
     ServerComponent,
     ServersComponent,
     ButtonCounterComponent,
-    CongratLabelComponent
+    CongratLabelComponent,
+    ButtonMessageComponent,
+    OutputComponent
   ],
   imports: [
     BrowserModule,

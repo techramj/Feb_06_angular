@@ -149,6 +149,7 @@ Assignment 1
 output the username property via spring Interpolation
 
 Add the button which may clicked if the username is not empty
+[disabled] =''
 once you click the button, the name should be reset to empty string.
 
 
@@ -162,3 +163,30 @@ no of times button clicked: 10
 
 modify the last Assignment
 <person name='jack' [age]='20' >
+
+router
+rest api => crud operation =>service 
+Form
+
+
+node-js => expose =>
+
+
+component1.ts                                    component1.html
+@Input() count:
+
+comppnent2.ts
+count=10;
+
+
+ng g c button
+   <button>
+ng g c banner
+  {{message}}
+ng g c button-banner
+message:
+count:
+
+<app-banner>
+<app-button>
+
