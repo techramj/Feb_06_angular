@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'output-example';
+  count:number = 0;
+  showComponent:boolean = true;
+
+  updateCount(){
+    this.count ++;
+  }
+
+  onHideUnhide(){
+    this.showComponent = !this.showComponent;
+  }
 }

@@ -190,3 +190,119 @@ count:
 <app-banner>
 <app-button>
 
+Direction:
+
+Structural Directive
+  *ngIf
+  *ngFor
+
+attribute Directive
+  [ngStyle]="{key:value}"
+  key=cssName
+  value=cssValue
+  eg:
+  [ngStyle] = "{'background-color':'green'}"
+  [ngStyle] = "{backgroundColor:'green'}"
+
+
+  [ngClass]="{key:value}"
+  key:class
+  value:condition
+
+
+  lifecycle:
+
+  ngOnChanges = > called after a input property changes
+  ngOnInit => called once when coponent is initalized
+  ngDoCheck => called during every changes.
+  ngAfterContentInit => called after contect(ng-content) has projected into view 
+  ngAfterViewChecked => called every time view and the child views have been ngAfterViewChecked
+  ngOnDestroy => called when componenet is about to destroy
+
+
+  http://localhost:4200/server
+  http://localhost:4200/servers
+  http://localhost:4200/lifecycle
+  http://localhost:4200/button-banner
+
+
+
+  Routing: SPA with multiple views and allows us to navigate to another page. 
+  User can switch b/w views without losing application state and properties.
+
+  URL paramter:
+
+  path param /url param
+  http://localhost:4200/button-banner/path-param
+
+  http://localhost:4200/button-banner/10
+
+  query param:
+  http://localhost:4200/button-banner?count=10&pagesize=1&pageno=5
+
+
+
+==========================================================
+create dummy server:
+
+step 1: create the folder: dbserver
+mkdir dbserver
+
+step 2: move to dbserver
+cd dbserver
+
+step 3: initalize the folder as node project
+npm init -y
+
+
+step 4: add file db.json
+
+step 6: add the data eg:
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Jack",
+      "email": "jack@test.com",
+      "salary": 10000
+    },
+    {
+      "id": 2,
+      "name": "Sam",
+      "email": "sam@test.com",
+      "salary": 2000
+    },
+    {
+      "id": 3,
+      "name": "Ramesh",
+      "email": "ramesh@gmail.com",
+      "salary": 9000
+    },
+    {
+      "id": 4,
+      "name": "Roman",
+      "email": "roman@test.com",
+      "salary": 5000
+    },
+    {
+      "id": 5,
+      "name": "Ajay",
+      "email": "ajay@test.com",
+      "salary": 6000
+    },
+    {
+      "id": 6,
+      "name": "Jessica",
+      "email": "jessica@test.com",
+      "salary": 11000
+    },
+    {
+      "name": "Maria",
+      "email": "maria@test.com",
+      "salary": 11000,
+      "id": 7
+    }
+  ]
+}
+
+run the server: npx json-server --watch db.json
