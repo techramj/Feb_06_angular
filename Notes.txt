@@ -306,3 +306,20 @@ step 6: add the data eg:
 }
 
 run the server: npx json-server --watch db.json
+
+
+==================================================================
+
+Assignment:
+ all compoenent: add the entry in the app-Routing.module.ts file
+ Add page-not-found component. This component contain a link. On click it should navigate to homepage.
+
+param-example component and fetch the value from path param and query param
+
+
+
+Service:
+----------------
+service is typescript class with the @Injectable decorator.
+The service can be injected into another services as will as component.
+ng g s service-name

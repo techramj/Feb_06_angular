@@ -16,6 +16,12 @@ import { NgContetExampleComponent } from './ng-contet-example/ng-contet-example.
 import { LifecycleComponent } from './lifecycle/lifecycle.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ParamExampleComponent } from './param-example/param-example.component';
+import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
+import { EmployeeCreateComponent } from './employee-create/employee-create.component';
+import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { EmployeeEditComponent } from './employee-edit/employee-edit.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -31,12 +37,18 @@ import { ParamExampleComponent } from './param-example/param-example.component';
     NgContetExampleComponent,
     LifecycleComponent,
     PageNotFoundComponent,
-    ParamExampleComponent
+    ParamExampleComponent,
+    LoginComponent,
+    HomeComponent,
+    EmployeeCreateComponent,
+    EmployeeListComponent,
+    EmployeeEditComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
