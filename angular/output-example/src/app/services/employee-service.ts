@@ -25,7 +25,7 @@ export class EmployeeService {
 
   //fetch by id
   getEmployee(id:any):Observable<Employee>{
-    return this.http.get<Employee>(this.url+"/employee/"+id);
+    return this.http.get<Employee>(this.url+"/employees/"+id);
   }
 
   //add employees
@@ -46,7 +46,7 @@ export class EmployeeService {
 
   //delete employee
   deleteEmployee(id:any):Observable<Employee>{
-    return this.http.delete<Employee>(this.url+"/employee/"+id);
+    return this.http.delete<Employee>(this.url+"/employees/"+id);
   }
 
 

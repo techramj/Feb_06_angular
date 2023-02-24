@@ -1,9 +1,4 @@
 
-<div class="form-group">
-  <label for="exampleInputPassword1">Password</label>
-  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-</div>
-
 <div class="container custom-container">
   <div class="col-md-12">
     <h3 class="mb-3 text-center">Create Employee!</h3>
@@ -18,6 +13,9 @@
     <div class="form-group">
       <label for="name">Salary</label>
       <input type="number" class="form-control" id="salary" placeholder="Enter Salary" [(ngModel)]="emp.salary">
+    </div>
+    <div class="for-group">
+      <button class="btn btn-success" (click)="addEmployee()">Add Employee</button>
     </div>
   </div>
 </div>

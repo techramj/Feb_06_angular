@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Employee } from '../model/employee';
 import { EmployeeService } from '../services/employee-service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-employee-create',
@@ -11,16 +12,19 @@ export class EmployeeCreateComponent implements OnInit {
 
   @Input() emp = {name:'', email:'', salary:0};
 
-  constructor(public empService:EmployeeService) { }
+  constructor(public empService:EmployeeService,
+    public router:Router
+    ) { }
 
   ngOnInit(): void {
 
   }
 
-  addEmployee(emp:any){
+  addEmployee(){
     this.empService.addEmployee(this.emp).subscribe((data:{})=>{
-      //navigate to employee detail
-    });
+        this.router.navigate(['/emp-list'])
+      });
+      
   }
 
 }

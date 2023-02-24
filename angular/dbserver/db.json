@@ -27,20 +27,26 @@
     {
       "id": 5,
       "name": "Ajay",
-      "email": "ajay@test.com",
-      "salary": 6000
+      "email": "ajay@gmail.com",
+      "salary": 15000
     },
     {
       "id": 6,
       "name": "Jessica",
       "email": "jessica@test.com",
-      "salary": 11000
+      "salary": 13000
     },
     {
-      "name": "Maria",
-      "email": "maria@test.com",
-      "salary": 11000,
+      "name": "Abhijeet",
+      "email": "abhi@gmail.com",
+      "salary": 12000,
       "id": 7
+    },
+    {
+      "name": "Abhijeet",
+      "email": "abhi@gmail.com",
+      "salary": 12000,
+      "id": 8
     }
   ]
 }

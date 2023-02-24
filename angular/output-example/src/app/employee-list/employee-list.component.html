@@ -1,5 +1,7 @@
 <div class="container custom-container-2">
-
+  <div>
+    <button class="btn btn-primary"  routerLink="/add-emp">Add Employee</button>
+  </div>
   <div>
      <h3>Employee List</h3>
      <div class="col-md-12">
@@ -8,22 +10,22 @@
             <th scope="col">Employee Id</th>
             <th scope="col">Name</th>
             <th scope="col">Email</th>
-            <th scope="col">Phone</th>
+            <th scope="col">Salary</th>
             <th scope="col">Action</th>
           </thead>
+          <tbody>
+            <tr *ngFor="let emp of employees">
+              <td>{{emp.id}}</td>
+              <td>{{emp.name}}</td>
+              <td>{{emp.email}}</td>
+              <td>{{emp.salary}}</td>
+              <td>
+                <span class="edit" style="margin:0 10px" routerLink="/emp-edit/{{emp.id}}">Edit</span>
+                <span class="delete" (click)="deleteEmp(emp.id)">Delete</span>
+              </td>
+            </tr>
+          </tbody>
         </table>
-        <tbody>
-          <tr *ngFor="let emp of employees">
-            <td>{{emp.id}}</td>
-            <td>{{emp.name}}</td>
-            <td>{{emp.email}}</td>
-            <td>{{emp.salary}}</td>
-            <td>
-              <span class="edit" routerLink="/emp-edit/{{emp.id}}">Edit</span>
-              <span class="delete" (click)="deleteEmp(emp.id)">Delete</span>
-            </td>
-          </tr>
-        </tbody>
      </div>
   </div>
 
