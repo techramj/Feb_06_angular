@@ -7,7 +7,7 @@ import { Observable, Subscriber, Subscription } from 'rxjs';
   styleUrls: ['./example2.component.css']
 })
 export class Example2Component implements OnInit, OnDestroy {
-  sub:Observable<any>;
+  subscription:Subscription;
 
   constructor() { }
 
@@ -51,30 +51,6 @@ export class Example2Component implements OnInit, OnDestroy {
     */
 
 
-    let obserable3 = new Observable((subscribe)=>{
-      let count =0;
-      setInterval(()=>{
-        let num = Math.random();
-      if(num<0.4){
-        subscribe.next(++count);
-      }else if(num<=0.7){
-        subscribe.error('Task not completed, due to some error!');
-      }else{
-        subscribe.complete();
-      }
-      },1000);
-
-
-    });
-
-    obserable3.subscribe((data:any)=>{
-      console.log(data);
-    }, (error:any)=>{
-      console.log('error');
-    },
-    ()=>{
-      console.log('task completed');
-    })
 
   }
 

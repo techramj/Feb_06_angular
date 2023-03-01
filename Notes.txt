@@ -323,3 +323,17 @@ Service:
 service is typescript class with the @Injectable decorator.
 The service can be injected into another services as will as component.
 ng g s service-name
+
+
+
+Form:
+1. Template driven
+<input type="text" id="" >
+
+step 1: import FormsModule in app.module.ts
+
+
+
+submit
+
+2.  Reactive driven
